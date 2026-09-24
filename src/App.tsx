@@ -85,13 +85,38 @@ function Foot() {
   )
 }
 
+const SITE = 'https://scanold.com'
+
+// per-page meta: title & description per language (SEO)
+const PAGE_META: Record<string, { en: [string, string]; zh: [string, string] }> = {
+  '/': {
+    en: ['MakeOld — Make any PDF look scanned. Free, in your browser.', 'Age any PDF or image into a believable scanned copy, or conjure an old newspaper clipping from plain text. Free, no signup, files never leave your browser.'],
+    zh: ['造旧 MakeOld — 把任何 PDF 做成扫描件，免费在线', '把 PDF 或图片做旧成逼真的扫描件，或用文字生成复古旧报纸剪报。免费、免注册，文件全程不离开浏览器。'],
+  },
+  '/scan': {
+    en: ['Scan Lab — Make any PDF look scanned | MakeOld', 'Drop in a PDF or image, pick a scan style, fine-tune aging, tilt, noise and stains, and export a realistic scanned PDF. Searchable text layer included. 100% local.'],
+    zh: ['扫描质感工坊 — 把 PDF 做成扫描件 | 造旧', '拖入 PDF 或图片，选扫描风格，微调做旧、歪斜、噪点与污渍，导出逼真的扫描 PDF，支持可搜索文字层。全程本地处理。'],
+  },
+  '/relic': {
+    en: ['Relic Maker — Vintage newspaper generator | MakeOld', 'Type plain text and instantly print an aged vintage newspaper clipping — columns, masthead, seal and all. Export as PNG or PDF.'],
+    zh: ['复古生成器 — 旧报纸生成器 | 造旧', '输入文字，实时排出一版做旧的复古报纸剪报——分栏、报头、印章一应俱全。可导出 PNG 或 PDF。'],
+  },
+  '/templates': {
+    en: ['Scan style presets — Old newspaper, photocopy, fax and more | MakeOld', 'Eight hand-tuned aging presets: Old Newspaper, Old Archive, Kraft Paper, Photocopies, Fax, Mimeographed Exam, Red-Header Document and Snapshot.'],
+    zh: ['风格模板 — 旧报纸、复印件、传真等 8 种做旧风格 | 造旧', '八种精调做旧风格：旧报纸、旧档案、牛皮纸、复印件、传真件、油印考卷、红头文件、随手拍。'],
+  },
+  '/about': {
+    en: ['About MakeOld — vintage paper document studio', 'MakeOld turns fresh pixels into paper with a past. Free, private (100% local processing), and built for creative, design and entertainment use.'],
+    zh: ['关于造旧 — 复古纸质文档工坊', '造旧把崭新的像素做成有年头的纸。免费、隐私（100% 本地处理），仅供创作、设计与娱乐使用。'],
+  },
+}
+
 function Layout() {
   const { pathname } = useLocation()
   const loc = locOf(pathname)
   const bare = strip(pathname)
 
   useEffect(() => {
-    const origin = window.location.origin
     const set = (rel: string, href: string, hreflang?: string) => {
       let el = document.head.querySelector<HTMLLinkElement>(`link[rel="${rel}"]${hreflang ? `[hreflang="${hreflang}"]` : ''}`)
       if (!el) {
@@ -102,10 +127,25 @@ function Layout() {
       }
       el.href = href
     }
-    set('alternate', origin + (bare === '/' ? '/' : bare), 'en')
-    set('alternate', origin + '/zh' + (bare === '/' ? '/' : bare), 'zh-CN')
-    set('alternate', origin + (bare === '/' ? '/' : bare), 'x-default')
-    set('canonical', origin + pathOf(loc, bare === '/' ? '/' : bare))
+    // hreflang/canonical always point at the production domain, never localhost
+    set('alternate', SITE + (bare === '/' ? '/' : bare), 'en')
+    set('alternate', SITE + '/zh' + (bare === '/' ? '/' : bare), 'zh-CN')
+    set('alternate', SITE + (bare === '/' ? '/' : bare), 'x-default')
+    set('canonical', SITE + pathOf(loc, bare === '/' ? '/' : bare))
+
+    // per-page title + description
+    const meta = PAGE_META[bare] || PAGE_META['/']
+    const [title, desc] = loc === 'zh' ? meta.zh : meta.en
+    document.title = title
+    let el = document.head.querySelector<HTMLMetaElement>('meta[name="description"]')
+    if (!el) {
+      el = document.createElement('meta')
+      el.name = 'description'
+      document.head.appendChild(el)
+    }
+    el.content = desc
+    let og = document.head.querySelector<HTMLMetaElement>('meta[property="og:url"]')
+    if (og) og.content = SITE + pathOf(loc, bare === '/' ? '/' : bare)
   }, [pathname, bare, loc])
 
   return (

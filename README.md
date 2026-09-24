@@ -1,6 +1,6 @@
 # MakeOld — Vintage Paper Document Studio
 
-**Turn fresh pixels into paper with a past.** MakeOld is a 100% client-side web tool that:
+**Live at [scanold.com](https://scanold.com)** · **Turn fresh pixels into paper with a past.** MakeOld is a 100% client-side web tool that:
 
 - **Scan Lab** — ages PDFs and images into believable "old scans": 8 one-click style packs (old newspaper, aged archive, kraft paper, 3rd-gen copy, fax roll, mimeograph, red-header doc, phone snap), per-page randomized aging (angle / stains / grain differ on every page), live before/after compare, zoomable inspection.
 - **Relic Maker** — conjures retro documents out of plain text: an old newspaper clipping (auto multi-column layout, masthead, seal) you can export as PNG or PDF.
