@@ -1,6 +1,6 @@
-# MakeOld — Vintage Paper Document Studio
+# ScanOld — Vintage Paper Document Studio
 
-**Live at [scanold.com](https://scanold.com)** · **Turn fresh pixels into paper with a past.** MakeOld is a 100% client-side web tool that:
+**Live at [scanold.com](https://scanold.com)** · **Turn fresh pixels into paper with a past.** ScanOld is a 100% client-side web tool that:
 
 - **Scan Lab** — ages PDFs and images into believable "old scans": 8 one-click style packs (old newspaper, aged archive, kraft paper, 3rd-gen copy, fax roll, mimeograph, red-header doc, phone snap), per-page randomized aging (angle / stains / grain differ on every page), live before/after compare, zoomable inspection.
 - **Relic Maker** — conjures retro documents out of plain text: an old newspaper clipping (auto multi-column layout, masthead, seal) you can export as PNG or PDF.
@@ -15,7 +15,7 @@ Everything runs **locally in your browser** — files are never uploaded to any 
 
 ## Searchable text layer
 
-When the input is a text-based PDF, MakeOld extracts the original text runs and re-draws
+When the input is a text-based PDF, ScanOld extracts the original text runs and re-draws
 them invisibly over the aged pages, so the exported "scan" stays **searchable and
 copy-pasteable** — something most scanned-look tools don't bother with.
 (Scanned/image-only inputs have no text to carry over, and the UI says so honestly.)
@@ -31,7 +31,7 @@ copy-pasteable** — something most scanned-look tools don't bother with.
 
 The aging pipeline (render → per-page randomized FX → grain/stain overlays → raster PDF) was
 **inspired by [Look Scanned](https://github.com/lookscanned/lookscanned.io)** (MIT) — a great
-project and well worth a look. MakeOld is an independent implementation, not a fork: no code
+project and well worth a look. ScanOld is an independent implementation, not a fork: no code
 was copied; the FX layer is original Canvas code chosen deliberately over an ImageMagick-WASM
 dependency.
 

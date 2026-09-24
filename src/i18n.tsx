@@ -37,7 +37,7 @@ const en: Record<string, string> = {
   'home.showcaseHead': 'From crisp PDF to twenty-year-old scan',
   'home.showcaseSub': 'Every dial moves in real time — what you see in the lab is exactly what lands in the exported PDF.',
   'home.cleanTag': 'Before · original PDF',
-  'home.agedTag': 'After · MakeOld engine',
+  'home.agedTag': 'After · ScanOld engine',
   'home.featHead': 'Built for believability',
   'home.ctaHead': 'Age your first document in ten seconds.',
   'home.ctaBtn': 'Open Scan Lab — it’s free',
@@ -104,13 +104,13 @@ const en: Record<string, string> = {
   'tplpage.title': 'Style packs',
   'tplpage.intro': 'Every pack is a hand-tuned recipe of paper tone, grain, tilt and stains — and no two pages ever come out the same. Open one in the Scan Lab and make it yours.',
   'tplpage.open': 'Open in Scan Lab →',
-  'about.title': 'About MakeOld (造旧)',
-  'about.p1': 'MakeOld is a studio for vintage paper documents. On one side, it ages your digital files into believable scans with style packs and per-page random aging. On the other, its Relic Maker conjures old newspapers, typed letters and telegrams out of plain text — things that never existed on any scanner.',
+  'about.title': 'About ScanOld (造旧)',
+  'about.p1': 'ScanOld is a studio for vintage paper documents. On one side, it ages your digital files into believable scans with style packs and per-page random aging. On the other, its Relic Maker conjures old newspapers, typed letters and telegrams out of plain text — things that never existed on any scanner.',
   'about.p2': 'Everything runs in your browser. Files are never uploaded, and the tool keeps working offline once loaded. That is not a feature list item — it is the whole posture of the product.',
   'about.p3': 'The scan engine builds on the open-source LookScanned community edition (MIT). The plan is to open-source the CLI and API as well, and keep bulk processing free.',
   'about.disTitle': 'Disclaimer',
-  'about.disclaimer': 'MakeOld is a creative, design and entertainment tool. It must not be used to forge documents for submission to employers, banks, schools, governments or any other party. You are responsible for lawful use of generated content.',
-  'foot.rights': 'MakeOld · 造旧 · Vintage paper document studio',
+  'about.disclaimer': 'ScanOld is a creative, design and entertainment tool. It must not be used to forge documents for submission to employers, banks, schools, governments or any other party. You are responsible for lawful use of generated content.',
+  'foot.rights': 'ScanOld · 造旧 · Vintage paper document studio',
 }
 
 const zh: Record<string, string> = {
@@ -215,13 +215,13 @@ const zh: Record<string, string> = {
   'tplpage.title': '风格模板库',
   'tplpage.intro': '每个模板都是一套手工调校的配方——纸色、噪点、歪斜、污渍各不相同，而且每一页的做旧结果都不一样。挑一个进工坊，再调成你的样子。',
   'tplpage.open': '在工坊中打开 →',
-  'about.title': '关于 MakeOld（造旧）',
-  'about.p1': 'MakeOld 是一间复古纸质文档工坊。一边把你的电子文件做旧成可信的扫描件（风格模板 + 每页随机做旧）；另一边用复古生成器凭空造出旧报纸、打字机信件和电报——这些老东西从没在任何扫描仪上出现过。',
+  'about.title': '关于 ScanOld（造旧）',
+  'about.p1': 'ScanOld 是一间复古纸质文档工坊。一边把你的电子文件做旧成可信的扫描件（风格模板 + 每页随机做旧）；另一边用复古生成器凭空造出旧报纸、打字机信件和电报——这些老东西从没在任何扫描仪上出现过。',
   'about.p2': '一切都在你的浏览器里完成：文件不上传，加载后离线可用。这不是功能清单里的一条，而是产品的全部姿态。',
   'about.p3': '扫描引擎基于开源的 LookScanned 社区版（MIT 协议）构建。后续将开源 CLI 与 API，批量处理永久免费。',
   'about.disTitle': '免责声明',
-  'about.disclaimer': 'MakeOld 是创作、设计与娱乐工具，严禁用于向单位、银行、学校、机关或其他方提交伪造材料。生成内容的合法使用由用户自行负责。',
-  'foot.rights': 'MakeOld · 造旧 · 复古纸质文档工坊',
+  'about.disclaimer': 'ScanOld 是创作、设计与娱乐工具，严禁用于向单位、银行、学校、机关或其他方提交伪造材料。生成内容的合法使用由用户自行负责。',
+  'foot.rights': 'ScanOld · 造旧 · 复古纸质文档工坊',
 }
 
 const dict: Record<Loc, Record<string, string>> = { en, zh }

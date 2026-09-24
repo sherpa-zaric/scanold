@@ -35,7 +35,7 @@ export default function RelicMaker() {
     setBusy(true)
     try {
       const canvas = await renderCanvas()
-      if (canvas) download(canvas.toDataURL('image/png'), 'makeold-relic.png')
+      if (canvas) download(canvas.toDataURL('image/png'), 'scanold-relic.png')
     } finally {
       setBusy(false)
     }
@@ -53,7 +53,7 @@ export default function RelicMaker() {
       const page = pdf.addPage([canvas.width / 2, canvas.height / 2])
       page.drawImage(img, { x: 0, y: 0, width: canvas.width / 2, height: canvas.height / 2 })
       const bytes = await pdf.save()
-      download(new Blob([bytes], { type: 'application/pdf' }), 'makeold-relic.pdf')
+      download(new Blob([bytes], { type: 'application/pdf' }), 'scanold-relic.pdf')
     } finally {
       setBusy(false)
     }

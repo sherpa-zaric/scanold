@@ -1,4 +1,4 @@
-/* ============ MakeOld design tokens ============ */
+/* ============ ScanOld design tokens ============ */
 :root {
   --paper: #f3e9d3;
   --paper-2: #faf3e2;
@@ -27,6 +27,10 @@
   --mono: 'SF Mono', Menlo, Consolas, monospace;
   --noise: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/></filter><rect width='140' height='140' filter='url(%23n)' opacity='0.55'/></svg>");
 }
+
+/* brand wordmark: Scan + seal-ring O + ld */
+.wordmark { display: inline-flex; align-items: center; font-family: var(--serif); font-weight: 700; color: var(--ink-2); letter-spacing: .5px; white-space: nowrap; }
+.wordmark svg { flex-shrink: 0; transform: translateY(6%); }
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
