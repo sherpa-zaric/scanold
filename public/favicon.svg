@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect x="4" y="4" width="56" height="56" rx="8" fill="#b3342a" transform="rotate(-3 32 32)"/>
+  <text x="32" y="27" font-family="Songti SC, serif" font-size="18" fill="#f3e9d3" text-anchor="middle" transform="rotate(-3 32 32)">造</text>
+  <text x="32" y="49" font-family="Songti SC, serif" font-size="18" fill="#f3e9d3" text-anchor="middle" transform="rotate(-3 32 32)">旧</text>
+</svg>
