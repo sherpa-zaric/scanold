@@ -7,6 +7,10 @@
 
 Everything runs **locally in your browser** — files are never uploaded to any server. There is no backend.
 
+## Deployment note
+
+The app is a client-side SPA, so unknown paths (`/scan`, `/zh/relic`, …) must fall back to `index.html`. On Cloudflare Workers this is handled by `not_found_handling: single-page-application` in `wrangler.jsonc` — **do not add a `public/_redirects` file**: Workers parses it as routing config and rejects the deploy with `Invalid _redirects configuration … Infinite loop detected [code: 100324]`. If you switch to Cloudflare Pages instead, add a `_redirects` file containing `/* /index.html 200` and drop `not_found_handling` from `wrangler.jsonc`.
+
 ## Privacy by architecture
 
 - PDF rendering happens with PDF.js inside your browser tab.
