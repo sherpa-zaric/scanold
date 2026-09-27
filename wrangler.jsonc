@@ -1,0 +1,11 @@
+{
+  // Cloudflare Workers static-assets deploy config.
+  // The whole app is a client-side SPA (routes: /scan, /relic, /templates, /about, /zh/*),
+  // so unknown paths must fall back to index.html instead of 404ing.
+  "name": "scanold",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  }
+}
