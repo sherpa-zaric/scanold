@@ -6,6 +6,9 @@
   "compatibility_date": "2026-09-01",
   "assets": {
     "directory": "./dist",
+    // serve /relic directly instead of 307-redirecting to /relic/, so the
+    // canonical URL (no trailing slash) is the one that returns 200
+    "html_handling": "drop-trailing-slash",
     "not_found_handling": "single-page-application"
   }
 }
