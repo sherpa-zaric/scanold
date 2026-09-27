@@ -1,0 +1,133 @@
+{
+  "site": "https://scanold.com",
+  "pages": {
+    "/": {
+      "en": {
+        "title": "ScanOld — Make any PDF look scanned. Free, in your browser.",
+        "desc": "Age any PDF or image into a believable scanned copy, or conjure an old newspaper clipping from plain text. Free, no signup, files never leave your browser.",
+        "h1": "Make any PDF look scanned",
+        "intro": "Drop a PDF or image into ScanOld and it comes out looking like it went through a real scanner — tilted, yellowed, grainy, with the odd stain. Or skip the file entirely and type a few lines to print yourself an old newspaper clipping.",
+        "points": [
+          "Two tools: Scan Lab for aging real documents, Relic Maker for inventing retro ones from plain text.",
+          "Eight one-click style presets: old newspaper, aged archive, kraft paper, photocopy, fax, mimeograph, red-header document and phone snapshot.",
+          "Every page is aged differently — angle, grain, brightness and stains vary page by page, the way a real stack of paper does.",
+          "100% local. Your files are processed in your browser and never uploaded anywhere. No signup, no watermarks."
+        ]
+      },
+      "zh": {
+        "title": "造旧 ScanOld — 把任何 PDF 做成扫描件，免费在线",
+        "desc": "把 PDF 或图片做旧成逼真的扫描件，或用文字生成复古旧报纸剪报。免费、免注册，文件全程不离开浏览器。",
+        "h1": "把任何 PDF 做成扫描件",
+        "intro": "把 PDF 或图片拖进造旧，出来就像真的过了一遍扫描仪——微微歪斜、泛黄、带颗粒，偶尔还有一块污渍。也可以不传文件，只打几行字，直接给自己印一张旧报纸剪报。",
+        "points": [
+          "两个工具：扫描质感工坊做旧真实文档，复古生成器用文字凭空造旧物。",
+          "八种一键风格：旧报纸、旧档案、牛皮纸、复印件、传真件、油印考卷、红头文件、随手拍。",
+          "每一页做旧程度都不同——角度、颗粒、明暗、污渍逐页变化，就像真的一叠纸。",
+          "100% 本地处理。文件在浏览器里处理，从不上传。免注册、无水印。"
+        ]
+      }
+    },
+    "/scan": {
+      "en": {
+        "title": "Scan Lab — Make any PDF look scanned | ScanOld",
+        "desc": "Drop in a PDF or image, pick a scan style, fine-tune aging, tilt, noise and stains, and export a realistic scanned PDF. Searchable text layer included. 100% local.",
+        "h1": "Scan Lab — make a PDF look scanned",
+        "intro": "Upload a PDF or image, choose a scan style preset, then drag the aging, tilt, noise, yellowing and blur sliders until it looks right. Compare against the original with the split slider, then export a scanned-looking PDF.",
+        "points": [
+          "Eight presets: Old Newspaper, Old Archive, Kraft Paper, Photocopy, Fax, Mimeographed Exam, Red-Header Document, Snapshot.",
+          "Per-page randomization — no two pages come out with the same angle or stains.",
+          "Zoom up to 400% and drag the compare line to inspect the difference pixel by pixel.",
+          "Keeps a searchable text layer: text-based PDFs stay searchable and copyable after aging."
+        ]
+      },
+      "zh": {
+        "title": "扫描质感工坊 — 把 PDF 做成扫描件 | 造旧",
+        "desc": "拖入 PDF 或图片，选扫描风格，微调做旧、歪斜、噪点与污渍，导出逼真的扫描 PDF，支持可搜索文字层。全程本地处理。",
+        "h1": "扫描质感工坊 — 把 PDF 做成扫描件",
+        "intro": "上传 PDF 或图片，选择扫描风格预设，再拖动做旧、歪斜、噪点、泛黄、模糊滑杆调到满意。用对比线左右查看原稿与效果，最后导出扫描感 PDF。",
+        "points": [
+          "八种预设：旧报纸、旧档案、牛皮纸、复印件、传真件、油印考卷、红头文件、随手拍。",
+          "逐页随机做旧——不会有两页的角度和污渍完全相同。",
+          "可放大到 400%，拖动对比线逐像素查看差异。",
+          "保留可搜索文字层：文字型 PDF 做旧后依然可搜索、可复制。"
+        ]
+      }
+    },
+    "/relic": {
+      "en": {
+        "title": "Relic Maker — Vintage newspaper generator | ScanOld",
+        "desc": "Type plain text and instantly print an aged vintage newspaper clipping — columns, masthead, seal and all. Export as PNG or PDF.",
+        "h1": "Vintage newspaper generator",
+        "intro": "Type a masthead, a date, a headline and a story. Relic Maker sets it the way a real paper was set — multi-column, justified, with rules between columns — then ages the paper and stamps it. Export as PNG or PDF.",
+        "points": [
+          "No design skills needed: columns, masthead, dateline and seal are laid out for you.",
+          "Old-style dating, aged paper and a slightly crooked red seal for authenticity.",
+          "Export a crisp PNG or a printable PDF — no watermark, no signup.",
+          "Made for gifts, party props, classroom history projects, murder-mystery clues, film props and memes."
+        ]
+      },
+      "zh": {
+        "title": "复古生成器 — 旧报纸生成器 | 造旧",
+        "desc": "输入文字，实时排出一版做旧的复古报纸剪报——分栏、报头、印章一应俱全。可导出 PNG 或 PDF。",
+        "h1": "旧报纸生成器",
+        "intro": "填上报名、日期、标题和正文，复古生成器按真实报纸的规矩排版——多栏、两端对齐、带栏线，再把纸做旧、盖上印章。可导出 PNG 或 PDF。",
+        "points": [
+          "不需要设计基础：分栏、报头、电头、印章自动排好。",
+          "老式纪年、做旧纸面、略微歪斜的朱红印章，还原真实感。",
+          "导出高清 PNG 或可打印 PDF，无水印、免注册。",
+          "适合礼物、活动道具、课堂历史作业、剧本杀线索、影视道具和表情包。"
+        ]
+      }
+    },
+    "/templates": {
+      "en": {
+        "title": "Scan style presets — Old newspaper, photocopy, fax and more | ScanOld",
+        "desc": "Eight hand-tuned aging presets: Old Newspaper, Old Archive, Kraft Paper, Photocopies, Fax, Mimeographed Exam, Red-Header Document and Snapshot.",
+        "h1": "Eight scan style presets",
+        "intro": "Every preset is a complete set of aging parameters — paper tone, grain, tilt, contrast and stain pattern — tuned by hand so one click gets you a believable result.",
+        "points": [
+          "Old Newspaper — newsprint grey, heavy grain, strong column shading.",
+          "Old Archive — browned paper, foxing spots, soft edges.",
+          "Photocopy — three generations of copier degradation, from clean to barely legible.",
+          "Fax — thermal-paper banding; Mimeograph — ink bleed and uneven inking; Snapshot — phone photo of a page, with shadow and perspective."
+        ]
+      },
+      "zh": {
+        "title": "风格模板 — 旧报纸、复印件、传真等 8 种做旧风格 | 造旧",
+        "desc": "八种精调做旧风格：旧报纸、旧档案、牛皮纸、复印件、传真件、油印考卷、红头文件、随手拍。",
+        "h1": "八种做旧风格模板",
+        "intro": "每个预设都是一整套做旧参数——纸色、颗粒、歪斜、对比度、污渍分布，全部手工调校，一键就能出可信的效果。",
+        "points": [
+          "旧报纸——新闻纸灰、重颗粒、明显的栏间阴影。",
+          "旧档案——泛褐纸面、霉斑、边缘发虚。",
+          "复印件——三代复印劣化，从干净到几乎看不清。",
+          "传真件——热敏纸条纹；油印考卷——油墨扩散、着墨不均；随手拍——手机翻拍，带阴影和透视。"
+        ]
+      }
+    },
+    "/about": {
+      "en": {
+        "title": "About ScanOld — vintage paper document studio",
+        "desc": "ScanOld turns fresh pixels into paper with a past. Free, private (100% local processing), and built for creative, design and entertainment use.",
+        "h1": "About ScanOld",
+        "intro": "ScanOld is a small studio for vintage paper documents: it ages real files into believable scans, and invents retro documents out of plain text. Everything runs in your browser — there is no server, no upload, no account.",
+        "points": [
+          "Built on open source: PDF.js for rendering, pdf-lib for assembly, html2canvas for image export.",
+          "Private by architecture: files never leave your device, so there is nothing to leak.",
+          "For creative, design and entertainment use only — never use it to forge documents for submission."
+        ]
+      },
+      "zh": {
+        "title": "关于造旧 — 复古纸质文档工坊",
+        "desc": "造旧把崭新的像素做成有年头的纸。免费、隐私（100% 本地处理），仅供创作、设计与娱乐使用。",
+        "h1": "关于造旧",
+        "intro": "造旧是一间做复古纸质文档的小工坊：把真实文件做旧成可信的扫描件，也用文字凭空造出复古旧物。全部在浏览器里运行——没有服务器、没有上传、没有账号。",
+        "points": [
+          "站在开源肩膀上：PDF.js 负责渲染，pdf-lib 负责合成，html2canvas 负责图片导出。",
+          "架构即隐私：文件从不离开你的设备，也就没有可泄露的东西。",
+          "仅供创作、设计与娱乐使用，请勿用于伪造材料提交。"
+        ]
+      }
+    }
+  }
+}

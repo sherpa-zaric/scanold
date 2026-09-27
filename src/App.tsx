@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Routes, Route, Outlet, Link, NavLink, useLocation } from 'react-router-dom'
 import { I18nProvider, useI18n, pathOf, Loc } from './i18n'
+import seo from './seo.json'
 import Home from './pages/Home'
 import ScanLab from './pages/ScanLab'
 import RelicMaker from './pages/RelicMaker'
@@ -111,31 +112,10 @@ function Foot() {
   )
 }
 
-const SITE = 'https://scanold.com'
+const SITE = seo.site
 
-// per-page meta: title & description per language (SEO)
-const PAGE_META: Record<string, { en: [string, string]; zh: [string, string] }> = {
-  '/': {
-    en: ['ScanOld — Make any PDF look scanned. Free, in your browser.', 'Age any PDF or image into a believable scanned copy, or conjure an old newspaper clipping from plain text. Free, no signup, files never leave your browser.'],
-    zh: ['造旧 ScanOld — 把任何 PDF 做成扫描件，免费在线', '把 PDF 或图片做旧成逼真的扫描件，或用文字生成复古旧报纸剪报。免费、免注册，文件全程不离开浏览器。'],
-  },
-  '/scan': {
-    en: ['Scan Lab — Make any PDF look scanned | ScanOld', 'Drop in a PDF or image, pick a scan style, fine-tune aging, tilt, noise and stains, and export a realistic scanned PDF. Searchable text layer included. 100% local.'],
-    zh: ['扫描质感工坊 — 把 PDF 做成扫描件 | 造旧', '拖入 PDF 或图片，选扫描风格，微调做旧、歪斜、噪点与污渍，导出逼真的扫描 PDF，支持可搜索文字层。全程本地处理。'],
-  },
-  '/relic': {
-    en: ['Relic Maker — Vintage newspaper generator | ScanOld', 'Type plain text and instantly print an aged vintage newspaper clipping — columns, masthead, seal and all. Export as PNG or PDF.'],
-    zh: ['复古生成器 — 旧报纸生成器 | 造旧', '输入文字，实时排出一版做旧的复古报纸剪报——分栏、报头、印章一应俱全。可导出 PNG 或 PDF。'],
-  },
-  '/templates': {
-    en: ['Scan style presets — Old newspaper, photocopy, fax and more | ScanOld', 'Eight hand-tuned aging presets: Old Newspaper, Old Archive, Kraft Paper, Photocopies, Fax, Mimeographed Exam, Red-Header Document and Snapshot.'],
-    zh: ['风格模板 — 旧报纸、复印件、传真等 8 种做旧风格 | 造旧', '八种精调做旧风格：旧报纸、旧档案、牛皮纸、复印件、传真件、油印考卷、红头文件、随手拍。'],
-  },
-  '/about': {
-    en: ['About ScanOld — vintage paper document studio', 'ScanOld turns fresh pixels into paper with a past. Free, private (100% local processing), and built for creative, design and entertainment use.'],
-    zh: ['关于造旧 — 复古纸质文档工坊', '造旧把崭新的像素做成有年头的纸。免费、隐私（100% 本地处理），仅供创作、设计与娱乐使用。'],
-  },
-}
+// per-page meta: title, description and static prerender copy, per language (SEO)
+const PAGE_META = seo.pages as Record<string, Record<'en' | 'zh', { title: string; desc: string; h1: string; intro: string; points: string[] }>>
 
 function Layout() {
   const { pathname } = useLocation()
@@ -161,7 +141,7 @@ function Layout() {
 
     // per-page title + description
     const meta = PAGE_META[bare] || PAGE_META['/']
-    const [title, desc] = loc === 'zh' ? meta.zh : meta.en
+    const { title, desc } = loc === 'zh' ? meta.zh : meta.en
     document.title = title
     let el = document.head.querySelector<HTMLMetaElement>('meta[name="description"]')
     if (!el) {
