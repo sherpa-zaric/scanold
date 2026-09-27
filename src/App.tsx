@@ -134,10 +134,12 @@ function Layout() {
       el.href = href
     }
     // hreflang/canonical always point at the production domain, never localhost
-    set('alternate', SITE + (bare === '/' ? '/' : bare), 'en')
-    set('alternate', SITE + '/zh' + (bare === '/' ? '/' : bare), 'zh-CN')
-    set('alternate', SITE + (bare === '/' ? '/' : bare), 'x-default')
-    set('canonical', SITE + pathOf(loc, bare === '/' ? '/' : bare))
+    // NOTE: the site is served with trailing slashes dropped (see wrangler.jsonc
+    // html_handling), so the Chinese home page is /zh — never /zh/, which 307s.
+    set('alternate', SITE + pathOf('en', bare), 'en')
+    set('alternate', SITE + pathOf('zh', bare), 'zh-CN')
+    set('alternate', SITE + pathOf('en', bare), 'x-default')
+    set('canonical', SITE + pathOf(loc, bare))
 
     // per-page title + description
     const meta = PAGE_META[bare] || PAGE_META['/']

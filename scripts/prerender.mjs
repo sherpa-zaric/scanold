@@ -20,7 +20,13 @@ const SITE = seo.site
 const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
-const pathOf = (loc, p) => (loc === 'zh' ? '/zh' : '') + (p === '/' ? '/' : p)
+// Trailing slashes are dropped site-wide (wrangler.jsonc html_handling =
+// "drop-trailing-slash"), so the Chinese home page URL is /zh — emitting /zh/
+// would point canonical + hreflang at a URL that 307-redirects.
+const pathOf = (loc, p) => {
+  if (loc !== 'zh') return p
+  return p === '/' ? '/zh' : '/zh' + p
+}
 
 let written = 0
 

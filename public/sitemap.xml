@@ -5,7 +5,7 @@
   <url>
     <loc>https://scanold.com/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scanold.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scanold.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scanold.com/zh"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scanold.com/"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -44,9 +44,9 @@
   </url>
 
   <url>
-    <loc>https://scanold.com/zh/</loc>
+    <loc>https://scanold.com/zh</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://scanold.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scanold.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scanold.com/zh"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scanold.com/"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
