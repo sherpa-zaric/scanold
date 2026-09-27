@@ -60,6 +60,10 @@ input, textarea { font-family: var(--sans); }
 .nav-links a:hover { color: var(--ink-2); }
 .nav-links a.on { color: var(--seal); border-bottom-color: var(--seal); font-weight: 600; }
 .nav-pill { border: 1px solid var(--line); border-radius: 99px; padding: 5px 16px; font-size: 13px; }
+.gh-pill { display: inline-flex; align-items: center; gap: 7px; padding: 5px 15px; }
+.gh-pill:hover { border-color: var(--ink-2); color: var(--ink); }
+.gh-link { display: inline-flex; align-items: center; gap: 7px; font-size: 14px; margin-bottom: 10px; }
+.gh-link:hover { color: var(--seal); }
 .nav-pill--lang { color: var(--seal) !important; border-color: #e0a89e !important; }
 
 /* ============ shared buttons ============ */
